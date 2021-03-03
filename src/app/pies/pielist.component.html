@@ -1,0 +1,15 @@
+<main class="container" role="main">
+    <div class="container mt-5">
+        <div class="row"  *ngIf='products && products.length'> 
+            <div class="col-md-4" *ngFor='let product of products'>
+                <img width="175" height="175" src="assets/images/products/{{product.productImageUrl}}small.jpg">
+                <h2>{{product.productName}}</h2>
+                <p>{{product.productCaption}}</p>
+                <p><a class="btn btn-primary" href="piedetails/{{product.productId}}" role="button">View details</a></p>
+            </div>
+           
+        </div>
+
+       
+    </div>
+</main>
